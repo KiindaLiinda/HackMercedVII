@@ -7,7 +7,7 @@ h1 {
   text-align: center;
 }
 .container {
-  height: 300px;
+  height: 400px;
   position: relative;
   border: 3px solid green;
 }
@@ -48,23 +48,39 @@ h1 {
 <body>
 
 <h1>OkHelp</h1>
-<p>Please Enter Your information Host</p>
+<p>Please Enter Your information as Host</p>
 <br>
-<p>This includes: </p>
-<p>-1. Enter your name.</p>
-<p>-2. Give a description of your stay(ex// how many bedrooms and bathrooms willing to spare).
-<p>-3. Please enter your location of stay.</p>
-<p>-4. Please enter religion if religous</p>
-<p>-5. what is max amount of people you are able to host?</p>
-<P>-6. Enter your phone number</p>
-<p>-7. Enter your email</p>
-<p>-8. Enter your language</p>
+<h1>Contacts</h1>
+<h3> This includes: </h3>
+<p>-1. Name</p>
+<p>-2. Description of stay</p>
+<p>-3. Location</p>
+<p>-4. Religion</p>
+<p>-5. Max People in House</p>
+<P>-6. Phone Number</p>
+<p>-7. Email of choice</p>
+<p>-8. Language Preference</p>
+<br>
 
 <div class="container">
-	<p>Enter your name</p>
-  <div class="center">
-  		<label for="fname">First name:</label>
-  </div>
+	<form>
+    	<label for="fname">1. Enter your name.</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="desc">2. Give a description of your stay(ex// how many bedrooms and bathrooms willing to spare).</label><br>
+        <input type="text" id="desc" name="desc"><br>
+        <label for="location">3. Please enter your location of stay.</label><br>
+        <input type="text" id="location" name="location"><br>
+        <label for="religion">4. Please enter religion if religous</label><br>
+        <input type="text" id="religion" name="religion"><br>
+        <label for="maxPeople">5. What is max amount of people you are able to host?</label><br>
+        <input type="text" id="maxPeople" name="maxPeople"><br>
+        <label for="phoneNum">6. Enter your phone number</label><br>
+        <input type="text" id="phoneNum" name="phoneNum"><br>
+        <label for="email">7. Enter your email.</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="language">8. Enter your language preference</label><br>
+        <input type="text" id="language" name="language"><br>
+    </form>
 </div>
 
 </body>
