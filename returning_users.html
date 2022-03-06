@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <title> Returning Users Selection Page </title>
+ </head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+ body {
+  background-color: #0072B2;
+  margin: 0;
+ }
+ .container{
+   margin: 25px;
+   height: 220px;
+   position: relative;
+   font-family: arial;
+   font-size: 24px;
+   width: relative;
+   outline: dashed 2.5px black;
+ }
+ .center{
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+ }
+ h1{
+   text-align: center;
+   font-family: Monaco;
+   font-size: 36px;
+   font-weight: bold;
+ }
+ .Refugee_btn{
+   background-color: #D39C93;
+   border: none;
+   color: black;
+   padding: 24px 60px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   font-family: Courier New;
+ }
+ .Refugee_btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+ .Host_btn{
+        background-color: #D39C93;
+   border: none;
+   color: black;
+   padding: 24px 75px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   font-family: Courier New;
+ }
+ .Host_btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.content {
+        padding:40px;
+    font-weight: bold;
+}
+ .header {
+  padding: 20px;
+  overflow: hidden;
+  background: #D39C93;
+  color: black;
+  font-size: 15px;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header a.logo {
+  font-size: 20px;
+  text-align: left;
+  font-family: Monaco;
+  font-weight: bold;
+  color: #0072B2;
+}
+.header-right {
+  float: right;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: Monaco;
+  outline: none;
+  background-color: #0072B2;
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header-right a:hover {
+  background-color: #E0E1E2;
+  color: black;
+}
+hr.solid {
+  height:1px;
+  border-width:0;
+  background-color: black;
+}
+ </style>
+ <body>
+        <div class="header">
+  <a class="logo"> OkHelp ⚐ </a>
+                <div class="header-right">
+                <a href="/index.html">Home</a>
+        </div>
+</div>
+<h1>Returning Users</h1>
+<hr class ="solid">
+<div class="content">
+    <p style="font-family:'Courier New'">If you are seeking refuge options, select the "Refugee" button. </p>
+    <p style="font-family:'Courier New'">If you are seeking host options, select the "Host" button.</p>
+</div>
+ <div class="container">
+   <div class="center">
+     <form>
+        <button formaction="returning_refugee.php" class="Refugee_btn">Refugee</button>
+     <br>
+     <br>
+     <button formaction="returning_host.php" class="Host_btn">Host</button>
+</form>
+   </div>
+ </div>
+ </body>
+ </html>
