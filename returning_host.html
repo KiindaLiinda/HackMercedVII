@@ -14,7 +14,7 @@
 
  .header {
   padding: 19px;
-  text-align: right;
+  text-align: left;
   background: #616668;
   color: black;
   font-size: 15px;
@@ -68,18 +68,28 @@
 }
 
 .content {
-	padding:20px;
+	padding:40px;
 }
 
 .header a.logo {
   font-size: 20px;
-  text-align: right;
+  text-align: left;
   font-family: Monaco;
   font-weight: bold;
 }
 
 hr.solid {
   border-top: 1px solid black;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #A8B1B7;
+  border-bottom: 2.5px solid black;
 }
 
 
@@ -106,15 +116,14 @@ hr.solid {
 
 <div class="content">
    <h3>Updates</h3>
-    <p style="font-family:'Courier New'"> Location Update: available upon request </p>
-    <p style="font-family:'Courier New'"> Contact Updates? </p>
-</div>
+   <form>
+  <label for="updates" style="font-family:'Courier New'"> Input any updates below for refugee. </label>
+  <input type="text" id="returning_host_updates" name="returning_host_updates">
+</form>
 
- <div class="container">
-   <div class="center">
-   	<button class="Request_btn">Request</button>
-     <br>
-   </div>
+<p style="font-family:'Courier New'"> Refugee Updates: </p>
+
+
  </div>
 
  </body>

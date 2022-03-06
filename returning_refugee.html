@@ -14,7 +14,7 @@
 
  .header {
   padding: 19px;
-  text-align: right;
+  text-align: left;
   background: #616668;
   color: black;
   font-size: 15px;
@@ -22,12 +22,11 @@
 
  .container{
    margin: 25px;
-   height: 100px;
+   height: relative;
    position: relative;
    font-family: arial;
    font-size: 24px;
    width: relative;
-   outline: dashed 2.5px black;
  }
 
  .center{
@@ -71,18 +70,32 @@
 }
 
 .content {
-	padding:20px;
+	padding:40px;
 }
 
 .header a.logo {
   font-size: 20px;
-  text-align: right;
+  text-align: left;
   font-family: Monaco;
   font-weight: bold;
 }
 
 hr.solid {
   border-top: 1px solid black;
+}
+
+img {
+  border: 2.5px dashed black;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #A8B1B7;
+  border-bottom: 2.5px solid black;
 }
 
 
@@ -94,7 +107,6 @@ hr.solid {
 </div>
 <h1>Host Information</h1>
 <hr class ="solid">
-
 <div class="content">
    <h3>Contacts</h3>
     <p style="font-family:'Courier New'"> Time Posted: </p>
@@ -111,14 +123,26 @@ hr.solid {
 <div class="content">
    <h3>Directions</h3>
     <p style="font-family:'Courier New'"> Select "Search" button below to begin optimal directions search. </p>
-    </div>
 
- <div class="container">
-   <div class="center">
+<div class="container">
+  <img src="https://developers.arcgis.com/documentation/static/display-a-map-b4974c7cfef498eb43e99ab60191cbaf.png" alt="Map" style="width:100%">
+  <div class="center">
    	<button class="Search_btn">Search</button>
      <br>
    </div>
- </div>
+</div>
+</div>
+
+<div class="content">
+   <h3>Updates</h3>
+    <form>
+  <label for="updates" style="font-family:'Courier New'"> Input any situation updates below for host. </label>
+  <input type="text" id="returning_refugee_updates" update="returning_refugee_updates">
+</form>
+
+<p style="font-family:'Courier New'"> Host Updates: </p>
+
+</div>
 
  </body>
 
