@@ -12,7 +12,7 @@
   <style>
 
     body {
-      background-color: #F0E4D7;
+      background-color: #0072B2;
       margin: 0;
     }
 
@@ -75,8 +75,10 @@
      }
 
      hr.solid {
-       border-top: 3px solid black;
-     }
+       height:1px;
+       border-width:0;
+       background-color: black;
+      }
 
      .text {
        text-align: center;
@@ -100,6 +102,14 @@
          transform: translate(-50%, -80%);
        }
 
+       .host{
+         background-color: #D39C93;
+       }
+
+       .refugee{
+         background-color: #D39C93;
+       }
+
     </style>
 
    <body>
@@ -111,7 +121,7 @@
     <hr class="solid">
 
       <div class="text">
-        <p style="font-size:40px">Welcome! Please click button that corresponds to you.</p>
+        <p style="font-size:40px">Welcome! Please click the button that corresponds to you.</p>
         <p style="font-size:20px">Are you a Host?</p>
         <p style="font-size:20px">or</p>
         <p style="font-size:20px">Are you a refugee?</p>
@@ -119,11 +129,11 @@
 
 
       <div class="center">
-        <button class="btn btn-success btn-lg">
+        <button class="btn host btn-lg">
           <span class="spinner-grow spinner-grow-sm"></span>
           Host
         </button>
-        <button class="btn btn-danger btn-lg">
+        <button class="btn refugee btn-lg">
           <span class="spinner-grow spinner-grow-sm"></span>
           Refugee
         </button>

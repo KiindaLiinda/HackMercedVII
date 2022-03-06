@@ -13,7 +13,7 @@
   <style>
 
     body {
-      background-color: #F0E4D7;
+      background-color: #0072B2;
       margin: 0;
     }
 
@@ -76,8 +76,10 @@
      }
 
      hr.solid {
-       border-top: 3px solid black;
-     }
+       height:1px;
+       border-width:0;
+       background-color: black;
+      }
 
      .text {
        text-align: center;
@@ -101,6 +103,14 @@
          transform: translate(-50%, -80%);
        }
 
+       .user{
+         background-color: #D39C93;
+       }
+
+       .returnUser{
+         background-color: #D39C93;
+       }
+
   </style>
 
   <body>
@@ -118,11 +128,11 @@
     </div>
 
     <div class="center">
-      <button class="btn btn-success btn-lg">
+      <button class="btn user btn-lg">
         <span class="spinner-grow spinner-grow-sm"></span>
         New User
       </button>
-      <button class="btn btn-danger btn-lg">
+      <button class="btn returnUser btn-lg">
         <span class="spinner-grow spinner-grow-sm"></span>
         Returning User
       </button>
