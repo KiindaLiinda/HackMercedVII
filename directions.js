@@ -1,34 +1,29 @@
-function initMap() {
-  var directionsDisplay = new google.maps.DirectionsRenderer;
-  var directionsService = new google.maps.DirectionsService;
+function initMap(){
+  directionsService = new google.maps.DirectionsService();
+  directionsRenderer = new google.maps.DirectionsRenderer();
 
-  directionsDisplay.setPanel(document.getElementById('right-panel'));
+  var mapCenter = new google.maps.LatLng(51.056628, 26.772190);
 
-  var onChangeHandler = function() {
-    calculateAndDisplayRoute(directionsService, directionsDisplay);
-  };
-  document.getElementById('start').addEventListener('change', onChangeHandler);
-  document.getElementById('end').addEventListener('change', onChangeHandler);
-  calculateAndDisplayRoute(directionsService, directionsDisplay);
+  var mapOptions = {
+    zoom: 1,
+    center: mapCenter
+  }
+  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  directionsRenderer.setMap(map);
 }
 
-function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-  //var start = document.getElementById('start').value;
-  //var end = document.getElementById('end').value;
+function calcRoute(){
+  var request = {
+    origin: 'Merced, CA',
+    destination: 'Los Angeles, CA',
+    travelMode: 'TRANSIT',
+    unitSystem: google.maps.UnitSystem.METRIC,
+    provideRouteAlternatives: false,
+  };
 
-  //   for start, get refugee location
-  //   for end, get host location
-
-  directionsService.route({
-    origin: start,
-    destination: end,
-    travelMode: google.maps.TravelMode.TRANSIT
-  }, function(response, status) {
-    if (status === google.maps.DirectionsStatus.OK) {
-      directionsDisplay.setDirections(response);
-    } else {
-      window.alert('Directions request failed due to ' + status);
+  directionsService.route(request, function(result, status) {
+    if (status == 'OK') {
+      directionsRenderer.setDirections(result);
     }
   });
 }
-google.maps.event.addDomListener(window, "load", initMap);
