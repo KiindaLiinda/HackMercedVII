@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Index.html</title>
+    <title>newUser.html</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -84,59 +84,36 @@
          -ms-transform: translate(-50%,-50%);
          transform: translate(-50%, -80%);
        }
-       .user{
+       .host{
          background-color: #D39C93;
        }
-       .returnUser{
+       .refugee{
          background-color: #D39C93;
        }
-  </style>
-  <body>
+    </style>
+   <body>
     <div class="header">
       <a class="logo"> OkHelp ⚐ </a>
     </div>
-    <h1>OkHelp.tech Homepage</h1>
+    <h1> New User </h1>
     <hr class="solid">
-    <div class="text">
-  <p style="font-size:40px">If you are returning to website click "Returning User" button</p>
-  <br>
-  <p style="font-size:40px">If new to website click "New User" Button</p>
+      <div class="text">
+        <p style="font-size:40px">Welcome! Please click the button that corresponds to you.</p>
+<p style="font-size:20px">Are you a Host?</p>
+<p style="font-size:20px">or</p>
+<p style="font-size:20px">Are you a refugee?</p>
 </div>
-<br>
-<br>
-<br>
-<div class="vertical-center">
-    <form>
-  <button formaction="/newUser.html"  class="btn user btn-lg">
-    <span class="spinner-grow spinner-grow-sm"></span>
-    New User
-  </button>
-      <button formaction="/returning_users.html" class="btn returnUser btn-lg">
-    <span class="spinner-grow spinner-grow-sm"></span>
-    Returning User
-  </button>
-    </form>
-</div>
-<br>
-<br>
-<br>
-<br>
-<p style="font-size:40px" class="text">For current news on Ukraine, press "Ukraine News" button</p>
-<br>
-<div class="vertical-center">
-<a href='https://www.nytimes.com/live/2022/03/05/world/russia-ukraine'><button class="btn btn-info btn-lg">
+<div class="center">
+<form>
+<button formaction="/newHost.html"  class="btn host btn-lg">
   <span class="spinner-grow spinner-grow-sm"></span>
-  Ukraine News
-  </button></a>
-</div>
-<br>
-<p style="font-size:40px" class="text">For current data of other countries accepting refugees click "Ukrain$
-<br>
-<div class="alignment">
-  <a href='https://data2.unhcr.org/en/situations/ukraine'><button class="btn btn-dark btn-lg">
-    <span class="spinner-grow spinner-grow-sm"></span>
-    Ukraine Refugee Data
-    </button></a>
+  Host
+</button>
+<button formaction="/newRefugee.html" class="btn refugee btn-lg">
+  <span class="spinner-grow spinner-grow-sm"></span>
+  Refugee
+</button>
+</form>
 </div>
 </body>
 </html>
