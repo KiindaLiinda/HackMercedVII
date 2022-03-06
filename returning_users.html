@@ -12,14 +12,6 @@
   margin: 0;
  }
 
- .header {
-  padding: 19px;
-  text-align: left;
-  background: #616668;
-  color: black;
-  font-size: 15px;
-}
-
  .container{
    margin: 25px;
    height: 220px;
@@ -84,11 +76,45 @@
 
 }
 
+ .header {
+  padding: 20px;
+  overflow: hidden;
+  background: #616668;
+  color: black;
+  font-size: 15px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
 .header a.logo {
   font-size: 20px;
   text-align: left;
   font-family: Monaco;
   font-weight: bold;
+}
+.header-right {
+  float: right;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: Monaco;
+  outline: none;
+  background-color: #CDD3D7;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header-right a:hover {
+  background-color: #E0E1E2;
+  color: black;
 }
 
 hr.solid {
@@ -100,6 +126,9 @@ hr.solid {
  <body>
  	<div class="header">
   <a class="logo"> OkHelp ⚐ </a>
+  		<div class="header-right">
+        	<a href="#">Home</a>
+        </div>
 </div>
 <h1>Returning Users</h1>
 <hr class ="solid">
