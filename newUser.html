@@ -1,65 +1,133 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
 
-h1 {
-  text-align: center;
-}
-.container {
-  height: 200px;
-  position: relative;
-  border: 3px solid green;
-}
+  <head>
+    <title>newUser.html</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  </head>
 
-.center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
 
-.btnNewuser {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
+  <style>
 
-.btnReturninguser{
-	background-color: #f44336;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+    body {
+      background-color: #F0E4D7;
+      margin: 0;
+    }
 
-}
-</style>
-</head>
-<body>
+    h1{
+      text-align: center;
+      font-family: Monaco;
+      font-size: 36px;
+      font-weight: bold;
+    }
 
-<h1>OkHelp</h1>
-<p>Are you Host or Refugee</p>
-<br>
-<p>Please press button to continue.</p>
+    h3{
+      font-family: Monaco;
+      font-size: 27px;
+    }
 
-<div class="container">
-  <div class="center">
-  	<button class="btnReturninguser">Host</button>
-    <br>
-    <br>
-    <button class="btnNewuser">Refugee</button>
-  </div>
-</div>
+    .header {
+      padding: 19px;
+      text-align: left;
+      background: #D39C93;
+      color: black;
+      font-size: 15px;
+    }
 
-</body>
+    .container{
+      margin: 25px;
+      height: 100px;
+      position: relative;
+      font-family: arial;
+      font-size: 24px;
+      width: relative;
+      outline: dashed 2.5px black;
+    }
+
+    .center{
+       margin: 0;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
+     }
+
+
+    .header a.logo {
+        font-size: 20px;
+        text-align: left;
+        font-family: Monaco;
+        font-weight: bold;
+      }
+
+     .content {
+     	padding:40px;
+     }
+
+     .header a.logo {
+       font-size: 20px;
+       text-align: left;
+       font-family: Monaco;
+       font-weight: bold;
+     }
+
+     hr.solid {
+       border-top: 3px solid black;
+     }
+
+     .text {
+       text-align: center;
+     }
+
+     .vertical-center{
+       margin:0;
+       position: absolute;
+       top: 50;
+       left: 50%;
+       -ms-transform: translate(-50%,-50%);
+       transform: translate(-50%, -50%);
+      }
+
+      .alignment{
+         margin:0;
+         position: absolute;
+         top: 50;
+         left: 50%;
+         -ms-transform: translate(-50%,-50%);
+         transform: translate(-50%, -80%);
+       }
+
+    </style>
+
+   <body>
+    <div class="header">
+      <a class="logo"> OkHelp ⚐ </a>
+    </div>
+
+    <h1> New User </h1>
+    <hr class="solid">
+
+      <div class="text">
+        <p style="font-size:40px">Welcome! Please click button that corresponds to you.</p>
+        <p style="font-size:20px">Are you a Host?</p>
+        <p style="font-size:20px">or</p>
+        <p style="font-size:20px">Are you a refugee?</p>
+      </div>
+
+
+      <div class="center">
+        <button class="btn btn-success btn-lg">
+          <span class="spinner-grow spinner-grow-sm"></span>
+          Host
+        </button>
+        <button class="btn btn-danger btn-lg">
+          <span class="spinner-grow spinner-grow-sm"></span>
+          Refugee
+        </button>
+      </div>
+
+    </body>
 </html>
